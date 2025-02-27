@@ -1,0 +1,12 @@
+{
+  "module_name": "simple-person-sensor",
+  "namespace": "anazen",
+  "language": "python",
+  "resource_type": "component",
+  "resource_subtype": "sensor",
+  "model_name": "person-sensor",
+  "enable_cloud_build": false,
+  "initialize_git": false,
+  "generator_version": "0.1.0",
+  "generated_on": "2025-02-26T01:38:30.193864Z"
+}

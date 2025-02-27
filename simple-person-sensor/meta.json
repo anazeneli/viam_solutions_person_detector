@@ -1,0 +1,26 @@
+{
+  "$schema": "https://dl.viam.dev/module.schema.json",
+  "module_id": "anazen:simple-person-sensor",
+  "visibility": "private",
+  "url": "",
+  "description": "Modular sensor component: person-sensor",
+  "models": [
+    {
+      "api": "rdk:component:sensor",
+      "model": "anazen:simple-person-sensor:person-sensor",
+      "short_description": "Sensor to notify if a person is in frame with a simple boolean",
+      "markdown_link": "README.md#model-anazensimple-person-sensorperson-sensor"
+    }
+  ],
+  "build": {
+    "build": "rm -f module.tar.gz && tar czf module.tar.gz requirements.txt src/*.py meta.json setup.sh reload.sh",
+    "setup": "./setup.sh",
+    "path": "module.tar.gz",
+    "arch": [
+      "linux/amd64",
+      "linux/arm64"
+    ]
+  },
+  "entrypoint": "./run.sh",
+  "first_run": ""
+}
